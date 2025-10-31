@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("../img/workbench.jpg");
+  /*background-image: url("../img/workbench.jpg");*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -20,6 +20,18 @@ p {
   width: 600px;
   text-align: justify;
   line-height: 1.5;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  text-align: justify;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+  padding: 30px;
+  margin: 5px;
 }
 
 
@@ -66,7 +78,7 @@ p {
   justify-content: flex-start;
   margin-top: auto;
   height: 800px ;
-  background-color: rgba(75, 75, 75, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 10px;
   text-align: center;
   color: #f2f2f2;
@@ -81,12 +93,22 @@ p {
   width: 100%;
   height: fit-content;
   padding: 14px 16px;
-
-
   background-color: #333;
   color: #888888;
   position: fixed;
   left:0;
   bottom: 0;
   text-align: center;
+}
+
+input[type=text], [type=email], textarea {
+  width: 100%;
+  height:fit-content;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
 }
