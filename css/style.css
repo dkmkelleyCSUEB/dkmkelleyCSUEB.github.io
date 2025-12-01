@@ -22,12 +22,19 @@ p {
   line-height: 1.5;
 }
 
+hr {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 3px solid darkgrey;
+  margin: unset;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
   width: 600px;
   text-align: justify;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, 1);
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
   padding: 30px;
@@ -39,24 +46,42 @@ p {
   display: flex;
   flex-direction: row;
   align-items: start ;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, 1);
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
   padding: 30px;
   margin: 5px;
   }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: start ;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+  padding: 30px;
+  margin: 5px;
+}
+
+.links a:hover {
+  background: linear-gradient(to left bottom, lightgreen, chartreuse);
+  color:black;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+  transition: all 5s ease-in-out;
+}
+
 
 
 .nav_bar {
   width: 100%;
   overflow: auto;
-  background-color: #333;
+  background-color: black;
   position: fixed;
 }
 
 .nav_bar a {
-  float: right;
+  float: left;
   color: #f2f2f2;
   padding: 14px 16px;
   text-align: center;
@@ -66,7 +91,6 @@ p {
 
 .nav_bar a:hover {
   background: linear-gradient(to left bottom, lightgreen, chartreuse);
-  /*background-color: chartreuse;*/
   color:black;
   box-shadow: 0 0 8px rgba(0,0,0,.3);
   transition: all 1500ms ease;
@@ -79,7 +103,7 @@ p {
   justify-content: flex-start;
   margin-top: auto;
   height: 800px ;
-  background-color: rgba(0, 0, 0, 0.85);
+  background: rgba(50,50,50, .85);
   padding: 10px;
   text-align: center;
   color: #f2f2f2;
@@ -94,7 +118,7 @@ p {
   width: 100%;
   height: fit-content;
   padding: 14px 16px;
-  background-color: #333;
+  background-color: black;
   color: #888888;
   position: fixed;
   left:0;

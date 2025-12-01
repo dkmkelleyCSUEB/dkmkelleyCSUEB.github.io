@@ -4,7 +4,7 @@
 <!--set language to english and include mailto functionality -->
 <html lang="en">
 
-<!-- create link to custom stylesheet file in css folder -->
+<!-- link to custom stylesheet file in css folder -->
 <link rel="stylesheet" href="css/style.css" />
 
 <head>
@@ -19,22 +19,15 @@
 <body>
 
 <!-- top navigation bar -->
-
 <div class="nav_bar">
   <a href="#about_me">Background</a>
   <a href="#projects">Projects</a>
-  <!-- <a href="https://github.com/dkmkelleyCSUEB/" target="_blank">GitHub</a> -->
-  <a href="/files/Resume%20of%20Donovan%20Kelley.pdf" target="_blank">Resume</a>
+  <a href="files/Resume of Donovan Kelley.pdf" target="_blank">Resume</a>
   <a href="#contact">Contact</a>
 </div>
 
 
-
-
-<!-- Main Content -->
-
-<!-- First Header -->
-
+<!-- First Header for picture and blurb-->
 <div class="content">
   <br><br><br>
   <h1 class="container">Welcome to the Website of Donovan Kelley</h1>
@@ -42,6 +35,9 @@
   <h2 class="container">Student, Developer, Builder</h2>
 </div>
 
+<hr class = "line">
+
+<!-- Second Header for Bio information -->
 <div class = "content" id="about_me">
   <br><br><br>
   <h1 class="container">About Me</h1>
@@ -60,10 +56,14 @@
     adult life.  That being said, I made a decision earlier this year to exit the
     entertainment industry to pursue a career in the technology sector.  I have
     always been passionate about computers and technology, and I am looking
-    forward to transitioning from a hobbyist to a technology professional.I am
+    forward to transitioning from a hobbyist to a technology professional.  I am
     currently seeking positions in the following fields: software development, software QA,
     systems administration, AI/ML, and information security. </p>
 </div>
+
+<hr class = "line">
+
+<!-- Third Header for Projects-->
 <div class="content" id = "projects">
   <br><br><br>
   <h1 class = "container">Projects</h1>
@@ -72,7 +72,7 @@
     electronics.  Even though work and school keep me fairly busy,
     I still find time to enjoy a number of hobbies including:</p>
     <ul style="text-align: start">
-    <li>Amateur radio, Meshtastic radios, and software-defined radio
+    <li>Amateur radio and Meshtastic radios
     <li>3D modeling using SolidWorks and 3D printing
     <li>Various raspberry pi projects
     <li>Python, Java, Javascript, and Android projects
@@ -84,11 +84,21 @@
       as well some Android apps that I have been working on in my Mobile Development class.</p>
 </div>
 
+<hr class = "line">
+
+<!-- Fourth Header for Contact Form -->
 <div class="content" id = "contact">
   <br><br><br>
   <h1 class = "container">Contact Me</h1>
   <div class = "contact">
 
+    <!-- Load EmailJS SDK from site -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Execute email script -->
+    <script src = "js/email.js"></script>
+
+    <!-- Contact Form fields -->
   <form id="contact-form">
     <input type="hidden" name="time" value="Mar 10 2025 08:46">
 
@@ -125,9 +135,10 @@
   </div>
 </div>
 
+<!-- Fifth Header for social media links -->
 <div class = "content" id = "links">
   <br><br><br>
-<h1 class = container>
+<h1 class = links>
   <a href = "http://www.facebook.com/dkmkelley">
     <img src = "img/fb_icon.png">
   </a>
@@ -141,6 +152,7 @@
 </div>
 
 
+<!-- Footer -->
 <div class="footer">
   © 2025 Donovan Kelley
 </div>
