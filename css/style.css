@@ -19,6 +19,12 @@ body {
 @media (max-width:600px) {
   body {
     background: #808080;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    align-items: center;
   }
   .container {
     display: grid;
