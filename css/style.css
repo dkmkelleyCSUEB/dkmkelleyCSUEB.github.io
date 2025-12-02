@@ -173,7 +173,7 @@ hr {
   padding: 10px;
   text-align: center;
   color: #f2f2f2;
-  width: 100%;
+ 
 }
 
 .footer {
@@ -193,7 +193,7 @@ hr {
 }
 
 input[type=text], [type=email], textarea {
-  width: 400px;
+  width: fit-content;
   height:fit-content;
   padding: 12px;
   border: 1px solid #ccc;
