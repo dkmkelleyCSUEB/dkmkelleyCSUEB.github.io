@@ -83,6 +83,10 @@ hr {
   margin: unset;
 }
 
+a:link, a:visited {
+  color: blue;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -166,7 +170,7 @@ hr {
   justify-content: flex-start;
   margin-top: auto;
   height: auto;
-  background: rgba(50,50,50, .85);
+  background: rgba(50,50,50, .90);
   padding: 10px;
   text-align: center;
   color: #f2f2f2;
